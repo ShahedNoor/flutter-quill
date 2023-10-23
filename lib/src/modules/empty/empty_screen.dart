@@ -27,67 +27,69 @@ class _EmptyScreenState extends State<EmptyScreen> {
             children: [
               Center(
                 child: Container(
-                  height: 100,
+                  height: 130,
                   width: MediaQuery.sizeOf(context).width,
                   color: CustomColors.blueColor,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: -45,
-                        left: -50,
-                        height: 145,
-                        width: 145,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: CustomColors.lightBlueColor
+                  child: SafeArea(
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          top: -45,
+                          left: -50,
+                          height: 145,
+                          width: 145,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: CustomColors.lightBlueColor
+                            ),
                           ),
                         ),
-                      ),
-                      Positioned(
-                        top: -20,
-                        right: -30,
-                        height: 100,
-                        width: 100,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: CustomColors.lightBlueColor
+                        Positioned(
+                          top: -20,
+                          right: -30,
+                          height: 100,
+                          width: 100,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: CustomColors.lightBlueColor
+                            ),
                           ),
                         ),
-                      ),
-                      Center(
-                        child: Container(
-                          margin: EdgeInsets.only(left: 25),
-                          child: ListTile(
-                            title: Text(
-                              "Hello Noor!",
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.white,
+                        Center(
+                          child: Container(
+                            margin: EdgeInsets.only(left: 25),
+                            child: ListTile(
+                              title: Text(
+                                "Hello Noor!",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            subtitle: Text(
-                              "Today you have no tasks",
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
+                              subtitle: Text(
+                                "Today you have no tasks",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            trailing: Container(
-                              height: 100,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage(profileImage),
-                                  fit: BoxFit.cover,
+                              trailing: Container(
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(profileImage),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quill/src/data/utils/colors.dart';
+import 'package:quill/src/modules/empty/empty_screen.dart';
 import 'package:quill/src/modules/signup/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -70,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SignUpScreen()));
+                            builder: (context) => EmptyScreen()));
                   },
                   child: Text(
                     "Login",

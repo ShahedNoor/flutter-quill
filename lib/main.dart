@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:quill/src/controllers/onboarding_controller.dart';
 import 'package:quill/src/modules/empty/empty_screen.dart';
 import 'package:quill/src/modules/onboarding/onboarding_screen.dart';
+import 'package:quill/src/modules/typing/typing_screen.dart';
 
 void main() {
   runApp(
@@ -30,8 +31,7 @@ class Quill extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: //OnboardingScreen(),
-        EmptyScreen()
+        body: OnboardingScreen(),
       ),
     );
   }
